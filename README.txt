@@ -1,21 +1,13 @@
-MARITIEM TEYLINGEN NOORDWIJK – WEBSITE
-==========================================
+WVS Noordwijk / Maritiem Teylingen - website update
 
-Upload de INHOUD van deze map naar de document root van maritiemteylingen.nl.
-Die map heet bij hosting vaak public_html, httpdocs, www of htdocs; controleer dit bij jouw hostingprovider.
-
-index.html moet rechtstreeks in de webroot staan.
-Laat de map assets naast index.html staan.
-
-Bestanden:
+Inhoud:
 - index.html
 - styles.css
-- script.js
-- assets/hero-warmond.jpg
-- assets/warmond.jpg
-- assets/noordwijk.jpg
 
-De site is statische HTML/CSS/JavaScript en heeft geen PHP/database nodig.
+Upload deze bestanden naar de map waarin de huidige index.html en styles.css staan en vervang die bestanden.
 
-De foto's in assets zijn uitsnedes uit de aangeleverde screenshots en bedoeld om de referentiesite visueel na te bootsen.
-Maak een backup van de huidige site voordat je bestaande bestanden overschrijft.
+Let op:
+- De bestaande map assets/ moet behouden blijven, met logo-maritiem.png, favicon.png, hero-warmond.jpg, warmond.jpg en noordwijk.jpg.
+- Als de huidige website een script.js gebruikt, laat dit bestand staan.
+- Het telefoonnummer van de contactpersoon in Noordwijk is bewust als tekstplaceholder gelaten zodat je dit later kunt invullen.
+- De tekst over liggeld noemt €15 per nacht voor boten tot 10 meter; eventuele toeslagen voor langere boten en elektriciteit moeten nog bevestigd worden.
