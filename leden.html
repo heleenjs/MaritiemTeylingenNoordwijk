@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ledendeel van WVS Noordwijk / Maritiem Teylingen">
+  <title>Leden | WVS Noordwijk / Maritiem Teylingen</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    .member-wrap{max-width:760px;margin:0 auto}
+    .member-login{max-width:460px;margin:0 auto;padding:30px;border:1px solid var(--line);background:#f8faff}
+    .member-login label{display:block;font-weight:800;color:var(--navy);margin-bottom:8px}
+    .member-login input{display:block;width:100%;padding:13px 14px;border:1px solid #aab7cc;border-radius:3px;font:inherit;margin-bottom:16px}
+    .member-error{color:#b51f32;font-weight:700;margin-top:12px}
+    .member-docs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}
+    .member-doc{border:1px solid var(--line);padding:24px;background:#fff;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+    .member-doc h3{margin:0;color:var(--navy)}
+    .member-doc p{margin:0;flex:1}
+    .member-doc a{font-weight:800;color:var(--navy)}
+    .member-notice{padding:16px 18px;background:#f1f4fa;border-left:3px solid var(--red);margin:24px 0}
+    @media(max-width:600px){.member-login{padding:22px}.member-docs{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="topbar"><div>WARMOND · NOORDWIJK</div><div>LEDENINFORMATIE</div></div>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="WVS Noordwijk / Maritiem Teylingen home"><span class="brand-mark"><img src="assets/logo-maritiem.png" alt="Logo Maritiem Teylingen"></span><span><strong>WVS Noordwijk / Maritiem Teylingen</strong><small>WARMOND | NOORDWIJK</small></span></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav id="main-nav"><a href="zijldijk.html">Zijldijk</a><a href="noordwijk.html">Noordwijk</a><a href="activiteiten.html">Activiteiten</a><a href="index.html#passanten">Passanten</a><a class="nav-current" href="leden.html">Leden</a></nav>
+</header>
+<main>
+  <section class="page-hero"><div class="breadcrumb"><a href="index.html">Home</a> / Leden</div><p class="eyebrow">ALLEEN VOOR LEDEN</p><h1>Ledeninformatie</h1><p class="lead">Documenten en praktische informatie voor leden van beide locaties.</p></section>
+  <section class="page-content member-wrap">
+    <div id="member-login" class="member-login">
+      <h2>Inloggen voor leden</h2>
+      <p>Voer het gezamenlijke wachtwoord voor de ledenpagina in.</p>
+      <form id="member-form">
+        <label for="member-password">Wachtwoord</label>
+        <input id="member-password" name="password" type="password" autocomplete="current-password" required>
+        <button class="button button-primary" type="submit">Inloggen</button>
+        <p id="member-error" class="member-error" role="alert" hidden>Dat wachtwoord klopt niet. Probeer het opnieuw.</p>
+      </form>
+    </div>
+    <div id="member-content" hidden>
+      <h2>Documenten voor leden</h2>
+      <p>Hieronder vind je de gedeelde documenten. Open een document via de link; Google kan vragen om in te loggen met het Google-account waaraan toegang is verleend.</p>
+      <div class="member-notice"><strong>Let op:</strong> de ledenpagina is een eenvoudige afscherming. De echte toegangsbeveiliging van documenten regel je bij Google Drive zelf.</div>
+      <div class="member-docs">
+        <article class="member-doc"><h3>Document 1</h3><p>Vervang dit door de naam en korte omschrijving van het eerste Google-document.</p><a href="#" data-doc-link="1">Google-document openen ↗</a></article>
+        <article class="member-doc"><h3>Document 2</h3><p>Vervang dit door de naam en korte omschrijving van het tweede Google-document.</p><a href="#" data-doc-link="2">Google-document openen ↗</a></article>
+        <article class="member-doc"><h3>Document 3</h3><p>Vervang dit door de naam en korte omschrijving van het derde Google-document.</p><a href="#" data-doc-link="3">Google-document openen ↗</a></article>
+        <article class="member-doc"><h3>Document 4</h3><p>Vervang dit door de naam en korte omschrijving van het vierde Google-document.</p><a href="#" data-doc-link="4">Google-document openen ↗</a></article>
+      </div>
+      <p class="activity-note">Mis je toegang tot een document? Neem dan contact op met het secretariaat via <a href="mailto:Secretariswsvmt@gmail.com">Secretariswsvmt@gmail.com</a>.</p>
+    </div>
+    <a class="back-link" href="index.html">← Terug naar de homepage</a>
+  </section>
+</main>
+<footer><div><strong>WVS Noordwijk / Maritiem Teylingen</strong><span>Warmond · Noordwijk</span></div><div>Watersportvereniging, opgericht in 1977.</div></footer>
+<script src="script.js"></script>
+<script>
+  // PAS DIT AAN VOORDAT DE PAGINA ONLINE GAAT. Dit wachtwoord is alleen een eenvoudige drempel.
+  const MEMBER_PASSWORD = 'Haven1977';
+  const form = document.getElementById('member-form');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const entered = document.getElementById('member-password').value;
+    const error = document.getElementById('member-error');
+    if (entered === MEMBER_PASSWORD) {
+      document.getElementById('member-login').hidden = true;
+      document.getElementById('member-content').hidden = false;
+      error.hidden = true;
+    } else {
+      error.hidden = false;
+    }
+  });
+  // Voeg de echte Google Docs-URL's toe door de href="#" bij de gewenste data-doc-link te vervangen.
+  document.querySelectorAll('[data-doc-link]').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      if (link.getAttribute('href') === '#') {
+        event.preventDefault();
+        alert('Voeg eerst de URL van het Google-document toe in leden.html.');
+      }
+    });
+  });
+</script>
+</body>
+</html>
