@@ -1,8 +1,61 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Activiteiten – WVS Noordwijk / Maritiem Teylingen"><title>Activiteiten | WVS Noordwijk / Maritiem Teylingen</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/png" href="assets/favicon.png"></head><body><div class="topbar"><div>WARMOND · NOORDWIJK</div><div>TWEE PLEKKEN AAN HET WATER</div></div>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Activiteiten – WVS Noordwijk / Maritiem Teylingen"><title>Activiteiten | WVS Noordwijk / Maritiem Teylingen</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/png" href="assets/favicon.png"><style>
+.activity-gallery-photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.activity-gallery-photos .activity-tile {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+}
+.activity-gallery-photos .activity-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.activity-gallery-photos .activity-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .25s ease;
+}
+.activity-gallery-photos .activity-tile:hover .activity-photo img {
+  transform: scale(1.03);
+}
+@media (max-width: 800px) {
+  .activity-gallery-photos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+}
+@media (max-width: 480px) {
+  .activity-gallery-photos { grid-template-columns: 1fr; }
+}
+</style></head><body><div class="topbar"><div>WARMOND · NOORDWIJK</div><div>TWEE PLEKKEN AAN HET WATER</div></div>
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="WVS Noordwijk / Maritiem Teylingen home"><span class="brand-mark"><img src="assets/logo-maritiem.png" alt="Logo Maritiem Teylingen"></span><span><strong>WVS Noordwijk / Maritiem Teylingen</strong><small>WARMOND | NOORDWIJK</small></span></a>
   <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
-  <nav id="main-nav"><a href="zijldijk.html">Zijldijk</a><a href="noordwijk.html">Noordwijk</a><a href="activiteiten.html">Activiteiten</a><a href="index.html#passanten">Passanten</a></nav>
-</header><main><section class="page-hero"><div class="breadcrumb"><a href="index.html">Home</a> / Activiteiten</div><p class="eyebrow">VAN DE VERENIGING</p><h1>Activiteiten</h1><p class="lead">Foto’s van activiteiten, vrijwilligerswerk en gezellige momenten bij WVS Noordwijk / Maritiem Teylingen.</p></section><section class="page-content"><div class="intro"><div><p class="eyebrow">SAMEN AAN HET WATER</p><h2>Activiteiten van onze vereniging.</h2></div><p>Op deze pagina verzamelen we foto's van activiteiten, gezamenlijke werkdagen, evenementen en gezellige momenten in en rond de haven.</p></div><div class="activity-gallery">
-<article class="activity-tile"><div class="activity-photo"><img data-optional-photo src="assets/activiteiten/activiteit-01.jpg" alt="Onderhoud aan een schip in de haven"><div class="photo-placeholder" style="display:none">Voeg hier de foto toe:<br><strong>assets/activiteiten/activiteit-01.jpg</strong></div></div><div class="activity-caption"><h3>Onderhoud aan onze schepen</h3><p>Samen werken we aan het onderhoud van onze boten en houden we de haven netjes.</p></div></article><article class="activity-tile"><div class="activity-photo"><img data-optional-photo src="assets/activiteiten/activiteit-02.jpg" alt="Zonsondergang boven het water"><div class="photo-placeholder" style="display:none">Voeg hier de foto toe:<br><strong>assets/activiteiten/activiteit-02.jpg</strong></div></div><div class="activity-caption"><h3>Genieten op het water</h3><p>Van een mooie zonsondergang tot een rustige avond aan het water: hier komen we voor.</p></div></article><article class="activity-tile"><div class="activity-photo"><img data-optional-photo src="assets/activiteiten/activiteit-03.jpg" alt="Gezellig samenzijn op het haventerras"><div class="photo-placeholder" style="display:none">Voeg hier de foto toe:<br><strong>assets/activiteiten/activiteit-03.jpg</strong></div></div><div class="activity-caption"><h3>Gezelligheid in de haven</h3><p>Een plek om elkaar te ontmoeten, bij te praten en samen van de haven te genieten.</p></div></article><article class="activity-tile"><div class="activity-photo"><img data-optional-photo src="assets/activiteiten/activiteit-04.jpg" alt="Gezellig samenzijn bij de boten"><div class="photo-placeholder" style="display:none">Voeg hier de foto toe:<br><strong>assets/activiteiten/activiteit-04.jpg</strong></div></div><div class="activity-caption"><h3>Samen genieten</h3><p>Ook buiten het varen om is er ruimte voor gezelligheid en mooie momenten met elkaar.</p></div></article><article class="activity-tile"><div class="activity-photo"><img data-optional-photo src="assets/activiteiten/activiteit-05.jpg" alt="Feestelijk versierde boot in de haven"><div class="photo-placeholder" style="display:none">Voeg hier de foto toe:<br><strong>assets/activiteiten/activiteit-05.jpg</strong></div></div><div class="activity-caption"><h3>Feestelijk versierde schepen</h3><p>Onze boten zien er extra feestelijk uit tijdens bijzondere gelegenheden op het water.</p></div></article><article class="activity-tile"><div class="activity-photo"><img data-optional-photo src="assets/activiteiten/activiteit-06.jpg" alt="Verlichte boten tijdens een avond op het water"><div class="photo-placeholder" style="display:none">Voeg hier de foto toe:<br><strong>assets/activiteiten/activiteit-06.jpg</strong></div></div><div class="activity-caption"><h3>Avond op het water</h3><p>Met lichtjes en versierde schepen wordt een avond op het water een bijzonder moment.</p></div></article></div><a class="back-link" href="index.html">← Terug naar de homepage</a></section></main><footer><div><strong>WVS Noordwijk / Maritiem Teylingen</strong><span>Warmond · Noordwijk</span></div><div>Watersportvereniging, opgericht in 1977.</div></footer>
+  <nav id="main-nav"><a href="index.html#locaties">Locaties</a><a href="zijldijk.html">Zijldijk</a><a href="noordwijk.html">Noordwijk</a><a href="activiteiten.html">Activiteiten</a><a href="index.html#passanten">Passanten</a><a class="nav-button" href="index.html#lid-worden">Lid worden</a></nav>
+</header><main><section class="page-hero"><div class="breadcrumb"><a href="index.html">Home</a> / Activiteiten</div><p class="eyebrow">VAN DE VERENIGING</p><h1>Activiteiten</h1><p class="lead">Foto’s van activiteiten, vrijwilligerswerk en gezellige momenten bij WVS Noordwijk / Maritiem Teylingen.</p></section><section class="page-content">
+  <div class="activity-gallery activity-gallery-photos">
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-01.jpg" alt="Foto 1" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-02.jpg" alt="Foto 2" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-03.jpg" alt="Foto 3" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-04.jpg" alt="Foto 4" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-05.jpg" alt="Foto 5" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-06.jpg" alt="Foto 6" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-07.jpg" alt="Foto 7" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-08.jpg" alt="Foto 8" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-09.jpg" alt="Foto 9" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-10.jpg" alt="Foto 10" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-11.jpg" alt="Foto 11" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-12.jpg" alt="Foto 12" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-13.jpg" alt="Foto 13" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-14.jpg" alt="Foto 14" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-15.jpg" alt="Foto 15" loading="lazy"></div></figure>
+    <figure class="activity-tile"><div class="activity-photo"><img src="assets/activiteiten/activiteit-16.jpg" alt="Foto 16" loading="lazy"></div></figure>
+  </div>
+  <a class="back-link" href="index.html">← Terug naar de homepage</a>
+</section></main><footer><div><strong>WVS Noordwijk / Maritiem Teylingen</strong><span>Warmond · Noordwijk</span></div><div>Watersportvereniging, opgericht in 1977.</div></footer>
 <script src="script.js"></script></body></html>
