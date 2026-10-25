@@ -47,10 +47,21 @@
       <p>Hieronder vind je de gedeelde documenten. Open een document via de link; Google kan vragen om in te loggen met het Google-account waaraan toegang is verleend.</p>
       <div class="member-notice"><strong>Let op:</strong> de ledenpagina is een eenvoudige afscherming. De echte toegangsbeveiliging van documenten regel je bij Google Drive zelf.</div>
       <div class="member-docs">
-        <article class="member-doc"><h3>Document 1</h3><p>Vervang dit door de naam en korte omschrijving van het eerste Google-document.</p><a href="#" data-doc-link="1">Google-document openen ↗</a></article>
-        <article class="member-doc"><h3>Document 2</h3><p>Vervang dit door de naam en korte omschrijving van het tweede Google-document.</p><a href="#" data-doc-link="2">Google-document openen ↗</a></article>
-        <article class="member-doc"><h3>Document 3</h3><p>Vervang dit door de naam en korte omschrijving van het derde Google-document.</p><a href="#" data-doc-link="3">Google-document openen ↗</a></article>
-        <article class="member-doc"><h3>Document 4</h3><p>Vervang dit door de naam en korte omschrijving van het vierde Google-document.</p><a href="#" data-doc-link="4">Google-document openen ↗</a></article>
+        <article class="member-doc">
+          <h3>Instellen camera Noordwijk</h3>
+          <p>Handleiding voor het instellen van de camera in Noordwijk.</p>
+          <a href="https://drive.google.com/file/d/1Erqoq0nB2HtwgOW3hN3gFZUE6y6ymHrR/view" target="_blank" rel="noopener noreferrer">Document openen ↗</a>
+        </article>
+        <article class="member-doc">
+          <h3>Instellen camera Zijldijk</h3>
+          <p>Handleiding voor het instellen van de camera op de Zijldijk.</p>
+          <a href="https://drive.google.com/file/d/16PdFLAEOd2YAq1cQMj_bhj-MComUKGTg/view" target="_blank" rel="noopener noreferrer">Document openen ↗</a>
+        </article>
+        <article class="member-doc">
+          <h3>Instellen camera 5 Zijldijk</h3>
+          <p>Handleiding voor het instellen van camera 5 op de Zijldijk.</p>
+          <a href="https://drive.google.com/file/d/1i4geMboMWfUjWy-K5ZmJxswo7UkiDO-X/view" target="_blank" rel="noopener noreferrer">Document openen ↗</a>
+        </article>
       </div>
       <p class="activity-note">Mis je toegang tot een document? Neem dan contact op met het secretariaat via <a href="mailto:Secretariswsvmt@gmail.com">Secretariswsvmt@gmail.com</a>.</p>
     </div>
@@ -75,15 +86,7 @@
       error.hidden = false;
     }
   });
-  // Voeg de echte Google Docs-URL's toe door de href="#" bij de gewenste data-doc-link te vervangen.
-  document.querySelectorAll('[data-doc-link]').forEach(function (link) {
-    link.addEventListener('click', function (event) {
-      if (link.getAttribute('href') === '#') {
-        event.preventDefault();
-        alert('Voeg eerst de URL van het Google-document toe in leden.html.');
-      }
-    });
-  });
+
 </script>
 </body>
 </html>
